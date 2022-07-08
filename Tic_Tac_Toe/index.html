@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTTGame</title>
+    <style>
+        .container{
+            display: grid;
+            top: 2vw;
+            grid-template-rows: repeat(3,10vw);
+            grid-template-columns: repeat(3, 10vw);
+           
+    justify-content: center;
+    margin-top: 50px;
+
+    
+    
+
+
+        }
+        .container div{
+           border: 2px solid black; 
+           font-size: 3vw;
+           cursor: pointer;
+           
+        }
+        .tiles:hover {
+            color: aqua;
+            background-color: gray;
+            
+
+        }
+        .info {
+        margin-top: 34px;
+    }
+    .info{
+        font-size: 1.5rem;
+    }
+        nav{
+    background-color: rgb(37, 9, 37);
+    color: white;
+    height: 65px;
+    font-size: 27px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+        
+    </style>
+</head>
+<body>
+    <nav style="background-color: gray; font-size:60px;">
+        Let's Play Tic Tac Toe!
+    </nav>
+   
+
+   
+    
+    <div class="container">
+        <div class="tiles"  onclick="box(this)"></div>
+        <div class="tiles" onclick="box(this)"></div>
+        <div class="tiles" onclick="box(this)"></div>
+        <div class="tiles" onclick="box(this)"></div>
+        <div class="tiles" onclick="box(this)"></div>
+        <div class="tiles" onclick="box(this)"></div>
+        <div class="tiles" onclick="box(this)"></div>
+        <div class="tiles" onclick="box(this)"></div>
+        <div class="tiles" onclick="box(this)"></div>
+    </div>
+</body>
+
+
+<div class="info">
+    <hr>
+    <div class="turn"> <b>PLAYER X TURN </b> </div>
+   <hr>
+   <b> RESULT <p class="Result"></p> </b>
+   <hr>
+   <button class="reset" onclick="document.location.reload()">RESET</button><hr>
+
+
+</div>
+<script src='indexjs.js'></script>
+
+</html>

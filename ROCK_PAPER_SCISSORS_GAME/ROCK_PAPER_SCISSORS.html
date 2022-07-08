@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R-P-S_GAME</title>
+    
+
+<style>
+    body{
+        background-color:lightskyblue;
+    }
+    #container{  
+    position: relative;
+    margin: auto;
+    top: 2vw;
+    height: 40vw;
+    width: 55vw; 
+    
+}
+
+    .playerchoice{
+        padding :20px;
+        height: 30px;
+        width: 50%;
+        
+        
+    }
+    nav{
+        font-size: 40px;
+        
+        height: 75;
+    }
+
+</style>
+</head>
+<body>
+    <nav style="background-color:gray ;"><b>LET'S PLAY ROCK PAPER SCISSORS!</b></nav>
+    
+<div id="container">
+    <br>
+    <br>
+    <div class="player">
+        <p><b>Player's Choice:</b></p>
+        <span id="player"></span>
+        <br>
+        <input type="button" class="playerchoice" value="ROCK" onclick="GetVal(this)">
+        <input type="button" class="playerchoice" value="PAPER" onclick="GetVal(this)">
+        <input type="button" class="playerchoice" value="SCISSORS" onclick="GetVal(this)">
+        </div>
+    <div class="computer">
+        <p><b>Computer's Choice:</b></p>
+        <br>
+        <span id="computer"></span>
+    </div>
+    <hr>
+    <div class="result">
+        <p><b>Result:</b></p>
+        <span id="gameresult"></span>
+    </div>
+    <br>
+    <hr>
+    <div class="score" >
+        <p><b>Computer's Score:</b> </p><span id="compscore">0</span> 
+        <p><b>Player's Score:</b> </p><span id="playscore">0</span> 
+        <br>
+        <br>
+        <hr>
+        <button onclick="location.reload()">RESFRESH PAGE</button>
+    </div>
+    <br>
+    <br>
+    
+</div>
+</body>
+<script>let s = [2,1,4];
+    console.log(43)
+    s.forEach(element => console.log(element));</script>
+<script src="jscode.js">
+   
+//console.log(Math.floor(Math.random()*player_choice.length))
+</script>
+</html>
